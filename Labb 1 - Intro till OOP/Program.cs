@@ -5,12 +5,11 @@
         static void Main(string[] args)
         {
             Circle circle1 = new Circle();
+            Circle circle2 = new Circle();
+            circle1.radius = 5;
 
-            circle1.Radius = 5;
-
-            float area = circle1.GetArea(circle1.Radius, circle1._pi);
-
-            Console.WriteLine(area);
+            Console.WriteLine(circle1.GetArea(circle1.radius, circle1._pi));
+            Console.WriteLine(circle2.GetArea(circle2.radius, circle1._pi));            
         }
     }
 }

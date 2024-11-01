@@ -3,11 +3,16 @@
     public class Circle
     {
         public float _pi = 3.141f;
-        public int Radius;
+        public int radius;
 
-        public float GetArea(int Radius, float _pi)
+        public Circle()
         {
-            return Radius * Radius * _pi;
+            radius = 6;
+        }
+
+        public float GetArea(int radius, float _pi)
+        {
+            return radius * radius * _pi;
         }
     }
 }
